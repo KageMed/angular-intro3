@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
+import { ApiResponse } from 'src/app/model/ApiResponse';
 @Injectable({
     providedIn: 'root'
 })
@@ -9,10 +10,10 @@ export class MovieService {
 
     }
 
-    GetData(): Observable<any> {
-        let headers = new HttpHeaders();
-        headers = headers.append('x-rapidapi-host', 'box-office-buz1.p.rapidapi.com');
-        headers = headers.append('x-rapidapi-key', 'd8b69ce868mshe1883fd24db3134p143b34jsn40307eef82ad');
-        return this.$http.get<any>('https://box-office-buz1.p.rapidapi.com/movie/find/tt8946378', { headers });
+    API_KEY = "e6acb665359b45f8a3a0345a4bb9a5e9";
+    endpoint = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key="+this.API_KEY;
+    GetData(page:number): Observable<ApiResponse> {
+        console.log(page);
+        return this.$http.get<ApiResponse>(this.endpoint+"&page="+page);
     }
 }
