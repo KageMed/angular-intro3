@@ -1,0 +1,26 @@
+#montre {
+    display: block;
+    position: relative;
+    left: 30%;
+    top: 10%;
+  }
+  #montre-container{
+
+    width: 100%;
+    height:900px;
+
+  }
+  .images {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .aiguille {
+    top: 50px;
+    left: 50px;
+  }
+
+  .dark-mode {background-color: black;}
+  .light-mode {background-color: white;}
+  .center{text-align: center;margin-top:2%;}

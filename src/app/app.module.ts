@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { Exercice1Component } from './components/exercice1/exercice1.component';
@@ -44,6 +44,7 @@ import { Exemple8Component } from './components/exemple8/exemple8.component';
     Exemple8Component
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     CommonModule,
     FormsModule,
