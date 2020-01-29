@@ -22,9 +22,6 @@ export class Exercice2Component implements OnInit {
       this.$hours = date.getHours();
       console.log(this.$hours+"/"+this.$minutes+"/"+this.$seconds);
     });
-
-
-
   }
 
   ngOnInit() {
