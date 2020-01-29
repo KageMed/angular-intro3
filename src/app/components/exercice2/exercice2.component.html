@@ -1,5 +1,19 @@
 <app-header [title]="'Exercice 2'"></app-header>
-<img class="exerice" src="/assets/thinking.jpg" />
-<div>
-    Your solution here !
+
+<div  [ngClass]="status ? 'light-mode' : 'dark-mode'" id="montre-container" >
+    <div class="center" >
+        <button class="btn"(click)="click()">Dark Mode</button>
+        <button (click)="click_dark()">Light Mode</button>
+    </div>
+  <div id="montre" >
+      <img class="images" src="/assets/60.png">
+      <img class="images" src="/assets/12.png">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(10*6)+'deg)'}" src="/assets/second.png">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(2*6)+'deg)'}" src="/assets/minute.png">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(3*30)+((10*0.2))+'deg)'}"
+        src="/assets/heure.png">
+      <img class="images" src="/assets/panel.png">
+    
+    </div>
 </div>
+ 

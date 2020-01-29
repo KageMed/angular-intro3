@@ -12,4 +12,13 @@ export class Exercice2Component implements OnInit {
   ngOnInit() {
   }
 
+  status: boolean = true;
+  click(){
+      this.status = false;       
+  }
+
+  click_dark(){
+    this.status = true;       
+}
+
 }
