@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
-import { MovieService } from 'src/app/services/movie/movie.service';
+import { MovieService } from '../../services/movie/movie.service';
 import { error } from 'protractor';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { Movie } from 'src/app/model/movie';
+import { Movie } from '../../model/movie';
 import { finalize, delay } from 'rxjs/operators';
 
 
