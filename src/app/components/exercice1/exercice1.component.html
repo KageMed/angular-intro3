@@ -10,7 +10,7 @@
           <ng-template ngbSlide *ngFor="let movie of movies">
             <img [src]="movie.poster_path" class="slide-img" alt="Random slide">
             <div class="carousel-caption">
-              <h3>{{ movie.title }}</h3>
+              <h3> <span class="film-tilte" >{{ movie.title }}</span></h3>
               <p [innerText]="movie.overview"></p>
             </div>
           </ng-template>
