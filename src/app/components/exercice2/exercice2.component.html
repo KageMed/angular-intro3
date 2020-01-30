@@ -8,9 +8,9 @@
   <div id="montre" >
       <img class="images" src="/assets/60.png">
       <img class="images" src="/assets/12.png">
-      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(10*6)+'deg)'}" src="/assets/second.png">
-      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(2*6)+'deg)'}" src="/assets/minute.png">
-      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(3*30)+((10*0.2))+'deg)'}"
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(seconds*6)+'deg)'}" src="/assets/second.png">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(minutes*6)+'deg)'}" src="/assets/minute.png">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(hours*30)+((minutes*0.2))+'deg)'}"
         src="/assets/heure.png">
       <img class="images" src="/assets/panel.png">
     
