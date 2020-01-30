@@ -42,6 +42,9 @@ export class Exercice1Component implements OnInit {
         console.log("======");
         console.log(apiResponse.results);
         console.log("======");
+        apiResponse.results.map((item)=>{
+          item.poster_path = "https://image.tmdb.org/t/p/w342"+item.poster_path
+        });
         this.movies = this.movies.concat(apiResponse.results);
         console.log(this.movies);
 
