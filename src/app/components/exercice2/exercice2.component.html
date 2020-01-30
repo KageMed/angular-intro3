@@ -2,8 +2,8 @@
 
 <div  [ngClass]="status ? 'light-mode' : 'dark-mode'" id="montre-container" >
     <div class="center" >
-        <button class="btn-lg" [ngClass]="status ? 'btn btn-default' : 'btn btn-primary'" (click)="click()">Dark Mode</button>
-        <button class="btn-lg" [ngClass]="status ? 'btn btn-primary' : 'btn btn-default'" (click)="click_dark()">Light Mode</button>
+        <button class="btn-lg" [ngClass]="status ? 'btn btn-secondary' : 'btn btn-primary'" (click)="click()">Dark Mode</button>
+        <button class="btn-lg" [ngClass]="status ? 'btn btn-primary' : 'btn btn-secondary'" (click)="click_dark()">Light Mode</button>
     </div>
   <div id="montre" >
       <img class="images" src="https://i.ibb.co//HnJsDYc/60.png">
