@@ -15,6 +15,14 @@ export class Exercice2Component implements OnInit {
   $minutes:number;
   $hours:number;
   constructor() {
+    var date = new Date();
+      this.$seconds = date.getSeconds();
+      this.$minutes = date.getMinutes();
+      this.$hours = date.getHours();
+    
+  }
+
+  ngOnInit() {
     this.dateSource = interval(1000).subscribe(ign=>{
       var date = new Date();
       this.$seconds = date.getSeconds();
@@ -22,9 +30,6 @@ export class Exercice2Component implements OnInit {
       this.$hours = date.getHours();
       console.log(this.$hours+"/"+this.$minutes+"/"+this.$seconds);
     });
-  }
-
-  ngOnInit() {
   }
 
   status: boolean = true;
