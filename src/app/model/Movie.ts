@@ -16,7 +16,5 @@ export class Movie {
     fullPath: string = "https://image.tmdb.org/t/p/w342/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg";
 
 
-    getImagePath():String{
-        return "https://image.tmdb.org/t/p/w342/xBHvZcjRiWyobQ9kxBhO6B2dtRI.jpg";
-    }
+    
 }
