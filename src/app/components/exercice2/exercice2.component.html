@@ -7,12 +7,12 @@
     </div>
   <div id="montre" >
       <img class="images" src="/assets/60.png">
-      <img class="images" src="/assets/12.png">
-      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(seconds*6)+'deg)'}" src="/assets/second.png">
-      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(minutes*6)+'deg)'}" src="/assets/minute.png">
+      <img class="images" [src]="status ? '/assets/12.png' : '/assets/12_dark.png'">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(seconds*6)+'deg)'}" [src]="status ? '/assets/second.png' : '/assets/second_dark.png'">
+      <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+(minutes*6)+'deg)'}" [src]="status ? '/assets/minute.png' : '/assets/minute_dark.png'">
       <img class="images aiguille" [ngStyle]="{'transform': 'rotate('+((hours*30)+(minutes*0.2))+'deg)'}"
-        src="/assets/heure.png">
-      <img class="images" src="/assets/panel.png">
+        [src]="status ? '/assets/heure.png' : '/assets/heure_dark.png'">
+      <img class="images" [src]="status ? '/assets/panel.png' : '/assets/panel_dark.png'">
     
     </div>
 </div>
