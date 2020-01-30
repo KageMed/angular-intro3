@@ -2,13 +2,13 @@
 
 <div>
 
-  <div class="container">
+  <div class="container slide-container">
     <div class="row">
       <div class="col-md-12 py-3">
-        <h2 class="pb-2">Upcoming Events</h2>
+        <h2 class="pb-2 center"  >Box Office 2020 </h2>
         <ngb-carousel *ngIf="movies">
           <ng-template ngbSlide *ngFor="let movie of movies">
-            <img [src]="movie.poster_path" alt="Random slide">
+            <img [src]="movie.poster_path" class="slide-img" alt="Random slide">
             <div class="carousel-caption">
               <h3>{{ movie.title }}</h3>
               <p [innerText]="movie.overview"></p>
@@ -22,7 +22,7 @@
 
 </div>
 <div>
-    <button (click)="click()">Test</button>
+    <button class="btn btn-primary center" (click)="click()">Test</button>
 </div>
 
 
