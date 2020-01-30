@@ -28,7 +28,7 @@ export class Exercice1Component implements OnInit {
   page = 1;
   click() {
 
-    this.loadData();
+    
   }
 
   loadData() {
@@ -59,6 +59,7 @@ export class Exercice1Component implements OnInit {
   }
   ngOnInit() {
 
+    this.loadData();
   }
 }
 
